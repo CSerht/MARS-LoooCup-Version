@@ -9,7 +9,7 @@
 - 如何打开MARS
   - 当前README.md文档的同级目录下的**MARS_Looo_signal_final_V1.0.jar**，是打包后的程序，可以单独下载该文件
   - 在Windows环境下双击即可打开，注意，**需要jdk 1.8及以上版本的Java环境**，请自行配置
-    - 若双击打不开，可以双击**MARS_Launch.bat**运行MARS
+    - 若双击打不开，可以双击**MARS_Launch.bat**运行MARS（需要和jar文件在同级目录下）
 - 需要注意的设置，打开MARS，选择 settings
   - Permit extended (pseudo) instructions and formats 启用伪指令：建议勾选，也可不勾选
   - Delayed branching 启用延迟槽：如果你设计的CPU执行延迟槽指令，则必须勾选
@@ -21,6 +21,7 @@
   - 对于所有的、不访问串口的程序，其实都是支持的
   - 就NSCSCC2020和2021两届来说，目前还没有使用串口的程序，但是往后不好说
   - 注意，**MARS不支持`#define`语法**，这一点还是挺坑的，define使得MIPS程序的书写得到简化，视觉上也更加方便，更容易找到错误，对它的支持是必要的，否则对于本就复杂的汇编程序来说，没有define简直是场灾难
+- clone该仓库后，可以使用IDEA 2020打开本项目，自行修改源码
 
 _____
 
